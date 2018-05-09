@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Prêt de voiture</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <h2>Ajouter une voiture à la location</h2>
+
+    <form  id="form" class="create_auto" action="php/inscription.php" method="post">
+
+        <p>
+            <label for="marque">Marque : </label>
+            <input type="text" name="marque" value="" id="marque">
+        </p>
+
+        <p>
+            <label for="modele">Modèle : </label>
+            <input type="text" name="modele" value="" id="modele">
+        </p>
+
+        <p>
+            <label for="annee">Année : </label>
+            <input type="text" name="annee" value="" id="annee">
+        </p>
+
+        <p>
+            <label for="couleur">Couleur : </label>
+            <input type="text" name="couleur" value="" id="couleur">
+        </p>
+
+        <input  id="submit" type="submit" name="valide_auto" value="Ajouter voiture">
+
+        <div>
+            <p id="validation" ondblclick="sendForm()"></p>
+        </div>
+
+
+
+    </form>
+
+    <p class="return"></p>
+</div>
+</body>
+</html>
